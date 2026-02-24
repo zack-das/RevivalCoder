@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className="home-section">
       <div className="hero-container">
-      	<div className="hero"><p><span>.</span>Available for new projects</p></div>
+      	<div className="hero"><p><div className="glowdot"></div>Available for new projects</p></div>
 
       	<div className="hero-headline"><h1>Build. Upgrade. Optimize.</h1></div>
 
