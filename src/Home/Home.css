@@ -1,0 +1,154 @@
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.home-section{
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	background-color: #080810;
+
+}
+@font-face {
+    font-family: 'Space';
+    src: url('Fonts/spaceage.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@media (max-width: 768px) {
+	.hero-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 120px 8px 20px 8px;
+	width: 439px;
+	height: 100%;
+
+}
+.hero-in{
+ /*background-color: blue;*/
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+ gap: 6px;
+ width: 200px;
+ padding: 6px;
+ border: 1px solid #25D1F5;
+ border-radius: 18px;
+
+}
+.hero-in p{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 14px;
+	color: #00D4FF;
+	padding: 2px 2px;
+}
+.glowdot{
+	display: flex;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #25D1F5;
+	box-shadow:
+		0 0 4px #25D1F5,
+		0 0 8px #25D1F5,
+		0 0 14px rgba(37, 209, 245, 0.6),
+		0 0 20px rgba(37, 209, 245, 0.3);
+}
+
+.hero-headline{
+	display: flex;
+	flex-direction: row;
+	width: 358px;
+	height: 120px;
+
+}
+.hero-headline h1{
+	font-family: 'Space Grotesk';
+	margin: 60px 0;
+	font-size: 48px;
+	text-align: center;
+	color: #fff;
+}
+.hero-headline span{
+	color: #25D1F5;
+}
+.hero-info{
+	display: flex;
+	flex-direction: column;
+	margin: 120px 0 0 0;
+	width: 340px;
+	height: 117px;
+
+
+}
+.hero-info p{
+	font: 18px inter,sans-serif;
+	text-align: center;
+	color: #94A3B8;
+	margin: 32px 0px 0px;
+}
+.hero-cta{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	height: 128px;
+	margin: 32px 0px 0px;
+}
+.start{
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	border-radius: 12px;
+	width: 190px;
+	height: 56px;
+	padding: 0px 32px;
+	background-color: #00D4FF;
+}
+.start p{
+	text-align: center;
+	font: 22px inter,sans-serif;
+
+}
+.start .arrow{
+	display: flex;
+	width: 40px;
+	height: 40px;
+}
+.start .arrow p{
+	font-size: 30px;
+	text-align: center;
+}
+
+
+.hero-cta .start .arrow {
+	text-align: center;
+	font-size: 30px;
+	transition: transform 0.3s ease;
+}
+
+.start:hover .arrow {
+	transform: translateX(4px);
+}
+
+.hero-cta .view-services{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 12px;
+	width: 160px;
+	height: 56px;
+	background-color: #00D4FF;
+	padding: 0px 32px;
+
+}
+.hero-cta .view-services p{
+		font: 22px inter,sans-serif;
+		text-align: center;
+}
+
+
+}

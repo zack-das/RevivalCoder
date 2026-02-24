@@ -5,22 +5,23 @@ function Home() {
   return (
     <div className="home-section">
       <div className="hero-container">
-      	<div className="hero"><p><div className="glowdot"></div>Available for new projects</p></div>
+      	<div className="hero-in"><div className="glowdot"></div> <p>Available for new projects</p></div>
 
-      	<div className="hero-headline"><h1>Build. Upgrade. Optimize.</h1></div>
+      	<div className="hero-headline"><h1>Build. <span>Upgrade.</span> Optimize.</h1></div>
 
-      	<div className="hero-info"><p>Full-stack development,
-      	 creative design, and hands-on tech support.
-      	  I turn complex problems into clean, high-performance solutions.
+      	<div className="hero-info"><p>Full-stack development,creative design,<br/> and hands-on tech support.I turn<br/> complex problems into clean, high-<br/>performance solutions.
       	</p>
       	 </div>
       	 <div className="hero-cta">
-      	 	<button className="start-btn">
-      	 		Start a Project
-      	 	</button>
-      	 	<button className="view-services">
-      	 		view Services
-      	 	</button>
+
+      	 <div className="start">
+            <p>Start a Project</p>
+          <div className="arrow"><p>→</p></div> 
+         </div>
+
+      	 	<div className="view-services">
+      	 		<p>view Services</p>
+      	 	</div>
       	 </div>
     </div>
    </div>
