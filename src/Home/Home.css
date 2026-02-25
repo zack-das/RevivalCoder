@@ -10,11 +10,13 @@ body {
 
 }
 @font-face {
-    font-family: 'Space';
+    font-family: 'Space Grotesk';
     src: url('Fonts/spaceage.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
+
 @media (max-width: 768px) {
 	.hero-container{
 	display: flex;
@@ -37,6 +39,24 @@ body {
  border: 1px solid #25D1F5;
  border-radius: 18px;
 
+}
+.upgrade {
+  font-family: ; /* clean modern font */
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -1px;
+
+  background: linear-gradient(
+    90deg,
+    #22d3ee,   /* cyan */
+    #3b82f6,   /* blue */
+    #8b5cf6    /* purple */
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 .hero-in p{
 	text-align: center;
