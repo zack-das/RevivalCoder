@@ -1,0 +1,57 @@
+
+
+@media (max-width: 768px) {
+
+.tools-container{
+	display: flex;
+	background: #080810;
+	width: 412px;
+	height: 422px;
+	padding: 64px 0px;
+}
+.toolset{
+ display: flex;
+ padding: 0px 16px;
+ width: 380px;
+ height: 292px;
+ flex-direction: column;
+ gap: 24px;
+}
+.toolssub{
+	font-family: 'Space Grotesk';
+	font-size: 24px;
+	margin:  0 0 8px;
+	color: #fff;
+}
+.toolset .techs{
+	color: #00D4FF;
+}
+.toolset p{
+	color: #94A3B8;
+	font: 16px 'inter', sans-serif;
+}
+.tools{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.75rem;
+	width: 380px;
+	height: 172px;
+}
+.tools .tool-name{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 95px;
+	height: 32px;
+	border: 1px solid #94A3B8;
+	border-radius: 20px;
+	box-shadow: 0 0 #0000, 0 0 #0000,  0 0 #0000, 0 0 #0000, 0 0 10px rgba(0,212,255,.2);
+}
+.tool-name p{
+	color: #00D4FF;
+	text-align: center;
+	font: 12px 'inter', sans-serif;
+	padding: 8px 16px;
+	text-shadow: 0 0 10px rgba(0, 212, 255, .2);
+}

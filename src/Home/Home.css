@@ -1,14 +1,4 @@
-body {
-    font-family: 'Space Grotesk', sans-serif;
-}
 
-.home-section{
-	display: flex;
-	width: 100vw;
-	height: 100vh;
-	background-color: #080810;
-
-}
 @font-face {
     font-family: 'Space Grotesk';
     src: url('Fonts/spaceage.ttf') format('truetype');
@@ -18,13 +8,20 @@ body {
 
 
 @media (max-width: 768px) {
+	.home-section{
+	display: flex;
+	width: 100vw;
+	height: 915px;
+	padding:  80px 0px 0px;
+	background-color: #080810;
+
+}
+
 	.hero-container{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 120px 8px 20px 8px;
 	width: 439px;
-	height: 100%;
 
 }
 .hero-in{
@@ -41,7 +38,7 @@ body {
 
 }
 .upgrade {
-  font-family: ; /* clean modern font */
+  font-family: 'Space Grotesk'; /* clean modern font */
   font-size: 48px;
   font-weight: 700;
   letter-spacing: -1px;
@@ -85,7 +82,7 @@ body {
 	height: 120px;
 
 }
-.hero-headline h1{
+.hero-headline .headin{
 	font-family: 'Space Grotesk';
 	margin: 60px 0;
 	font-size: 48px;
@@ -121,11 +118,11 @@ body {
 .start{
 	display: inline-flex;
 	align-items: center;
-	gap: 10px;
+	gap: 5px;
 	border-radius: 12px;
 	width: 190px;
-	height: 56px;
-	padding: 0px 32px;
+	height: 58px;
+	padding: 0px 26px;
 	background-color: #00D4FF;
 }
 .start p{
@@ -158,10 +155,11 @@ body {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: 12px;
+	border-radius: 10px;
 	width: 160px;
 	height: 56px;
-	background-color: #00D4FF;
+	border: 1px solid #00D4FF;
+	color: #00D4FF;
 	padding: 0px 32px;
 
 }
@@ -172,3 +170,4 @@ body {
 
 
 }
+
