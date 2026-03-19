@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('Fonts/spaceage.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media (max-width: 768px) {
+	.services-section{
+	display: flex;
+	background-color: #080810;
+	width: 412px;
+	height: 2078px;
+	padding: 96px 0px;
+}
+.services-head{
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	align-items: center;
+	
+}
+.services-head h1{
+	font-family: 'Space Grotesk';
+	color: #fff;
+	text-align: center;
+}
+.services-head h1 span{
+	color: #00D4FF;
+}
+.services-head p{
+	color: #94A3b8;
+	font: 16px Inter,sans-serif;
+	width: 380px;
+	height: 72px;
+	text-align: center;
+}
+
+
+
+
+}
