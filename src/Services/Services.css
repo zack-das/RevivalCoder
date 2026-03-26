@@ -8,6 +8,7 @@
 @media (max-width: 768px) {
 	.services-section{
 	display: flex;
+	flex-direction: column;
 	background-color: #080810;
 	width: 412px;
 	height: 2078px;
@@ -16,7 +17,7 @@
 .services-head{
 	display: flex;
 	flex-direction: column;
-	width: 100vw;
+	width: 100%;
 	align-items: center;
 	
 }
@@ -24,6 +25,7 @@
 	font-family: 'Space Grotesk';
 	color: #fff;
 	text-align: center;
+	margin-bottom: 2.2rem;
 }
 .services-head h1 span{
 	color: #00D4FF;
@@ -36,7 +38,63 @@
 	text-align: center;
 }
 
-
+.service-container{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	
+}
+.serviceCard{
+	display: flex;
+	flex-direction: column;
+	background-color: #0D0D1AB3;
+	padding: 24px;
+	width: 300px;
+	height: 200px;
+	border: 1px solid rgba(0, 212, 255, .2);
+	border-radius: 12px;
+	margin: 0px 0px 24px;
+}
+.service-icon{
+	display: flex;
+	font-size: 28px;
+	width: 56px;
+	height: 56px;
+	margin: 0px 0px 2px;
+}
+.service-name h1{
+	color: #FFFFFF;
+	font-family: "Space Grotesk";
+	font-size: 20px;
+	margin: 0px 0px 8px;
+	width: ;
+}
+.service-info p{
+	font-family: inter,sans-serif;
+	font-size: 16px;
+	margin: 0px 0px 16px;
+	color: #94A3B8;
+}
+.service-link{
+	display: flex;
+	flex-direction: column;
+	margin: 4px 0px 0px;
+}
+.cs-line{
+	display: flex;
+	width: 278px;
+	border: 1px solid rgba(0, 212, 255, .2);
+}
+.service-link p{
+	font-family: inter,sans-serif;
+	font-size: 20px;
+	color: #00D4FF;
+	margin: 18px 0px 0px;
+}
+.service-link a{
+	text-decoration: none;
+	color: #00D4FF;
+}
 
 
 }
