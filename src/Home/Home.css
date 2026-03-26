@@ -10,7 +10,7 @@
 @media (max-width: 768px) {
 	.home-section{
 	display: flex;
-	width: 100vw;
+	width: 412px;
 	height: 915px;
 	padding:  80px 0px 0px;
 	background-color: #080810;
