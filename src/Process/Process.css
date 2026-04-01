@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('Fonts/spaceage.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@media (max-width: 768px) {
+    .Process{
+        display: flex;
+        flex-direction: column;
+        width: 430px;
+        min-height: 1016px;
+        background-color: #080810;
+        padding: 96px 0px;
+        justify-items: center;
+    }
+    .processHead{
+        display: flex;
+        width: 390px;
+
+    }
+    .cardContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    /* .cards{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 16px;
+    } */
+    .Process h1{
+        font-family: sans-serif;
+        font-size: 30px;
+        color: #ffff;
+        text-align: center;
+        margin: 0px 0px 16px;
+
+    }
+    .processIcon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 64px;
+        height: 64px;
+        border: 1px solid whitesmoke;
+        border-radius: 50%;
+    }
+    .processCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 32px;
+        width: 300px;
+        height: 200px;
+        border: 1px solid rgb(0, 60, 83);
+        border-radius: 5px;
+    }
+    .processCard h3{
+        color: #fff;
+        font-family: 'Space Grotesk';
+        font-size: 20px;
+    }
+    .processCard p{
+        font-family: 'inter',sans-serif;
+        font-size: 16px;
+        color: #94A3B8;
+        text-align: center;
+    }
+
+}
