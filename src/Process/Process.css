@@ -39,6 +39,10 @@
         margin: 0px 0px 16px;
 
     }
+    .Process h1 span{
+        color: #00D4FF;
+        font-family: "Space Grotesk";
+    }
     .processIcon{
         display: flex;
         align-items: center;
