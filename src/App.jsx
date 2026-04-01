@@ -4,6 +4,7 @@ import Navbar from './Navbar/Navbar'
 import Home from './Home/Home'
 import Tools from './Tools/Tools'
 import Services from './Services/Services'
+import Process from './Process/Process' 
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <div className="scroll-indicator">⌄</div>
     <Tools/>
     <Services/>
+    <Process/>
    </>
   )
 }
