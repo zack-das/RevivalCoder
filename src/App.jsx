@@ -14,8 +14,8 @@ function App() {
     <Home/>
     <div className="scroll-indicator">⌄</div>
      <Tools/>
-    {/*<Services/>
-    <Process/>*/}
+    <Services/>
+    <Process/>
    </>
   )
 }
