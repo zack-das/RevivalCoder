@@ -4,83 +4,99 @@
     font-weight: normal;
     font-style: normal;
 }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Temporary debug: this will put a red border around every single element 
+   so you can see exactly which one is sticking out to the right */
+/* * { outline: 1px solid red; } */
 @media (max-width: 768px) {
-    .Process{
+    .Process {
         display: flex;
         flex-direction: column;
-        width: 430px;
-        min-height: 1016px;
+        width: 100%; /* Fix: removed 430px */
+        height: auto; /* Fix: removed min-height */
         background-color: #080810;
-        padding: 96px 0px;
-        justify-items: center;
+        padding: 80px 20px;
+        box-sizing: border-box;
     }
-    .processHead{
-        display: flex;
-        width: 390px;
 
-    }
-    .cardContainer{
+    .processHead {
+        width: 100%; /* Fix: removed 390px */
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-    /* .cards{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 16px;
-    } */
-    .Process h1{
-        font-family: sans-serif;
-        font-size: 30px;
-        color: #ffff;
-        text-align: center;
-        margin: 0px 0px 16px;
-
-    }
-    .Process h1 span{
-        color: #00D4FF;
-        font-family: "Space Grotesk";
-    }
-    .processIcon{
-        display: flex;
-        align-items: center;
         justify-content: center;
-        width: 64px;
-        height: 64px;
-        border: 1px solid whitesmoke;
-        border-radius: 50%;
+        margin-bottom: 40px;
     }
-    .processCard{
+
+    .processCard {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 12px;
-        padding: 32px;
-        width: 300px;
-        height: 200px;
-        border: 1px solid rgb(0, 60, 83);
-        border-radius: 5px;
+        gap: 15px;
+        padding: 40px 24px;
+        margin-bottom: 20px;
+        width: 100%; 
+        max-width: 350px; /* Looks better on tablet */
+        height: auto; /* Let content dictate height */
+        border: 1px solid rgba(0, 60, 83, 0.5);
+        border-radius: 12px;
         position: relative;
+        overflow: hidden; /* Keeps the big number contained */
+        background: rgba(13, 13, 26, 0.5);
     }
-    .processNo{
-        font-size: 36px;
+
+    /* Transparent / Ghost Number effect */
+    .processNo {
         font-family: 'Space Grotesk';
+        font-size: 34px; /* Bigger for impact */
+        font-weight: 800;
         position: absolute;
-        top: 20px;
+        top: 10px;
+        right: 15px;
+        /* This makes it transparent yet visible */
+        color: rgba(255, 255, 255, 0.05); 
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1); 
+        user-select: none;
+        z-index: 0;
+    }
+
+    /* Ensure text stays above the number */
+    .processCard h3, .processCard p, .processIcon {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .Process {
+        padding: 60px 15px;
+    }
+
+    .Process h1 {
+        font-size: 26px; /* Smaller for iPhone SE */
+    }
+
+    .processCard {
+        padding: 30px 20px;
+        max-width: 290px; /* Fits 320px screen perfectly */
+    }
+
+    .processNo {
+        font-size: 48px; /* Slightly smaller number */
+        top: 5px;
         right: 10px;
     }
-    .processCard h3{
-        color: #fff;
-        font-family: 'Space Grotesk';
-        font-size: 20px;
-    }
-    .processCard p{
-        font-family: 'inter',sans-serif;
-        font-size: 16px;
-        color: #94A3B8;
-        text-align: center;
+
+    .processCard h3 {
+        font-size: 18px;
     }
 
+    .processCard p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
 }

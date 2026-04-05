@@ -6,95 +6,165 @@
 }
 
 @media (max-width: 768px) {
-	.services-section{
-	display: flex;
-	flex-direction: column;
-	background-color: #080810;
-	width: 430px;
-	height: 2078px;
-	padding: 96px 0px;
-}
-.services-head{
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	align-items: center;
-	
-}
-.services-head h1{
-	font-family: 'Space Grotesk';
-	color: #fff;
-	text-align: center;
-	margin-bottom: 2.2rem;
-}
-.services-head h1 span{
-	color: #00D4FF;
-}
-.services-head p{
-	color: #94A3b8;
-	font: 16px Inter,sans-serif;
-	width: 380px;
-	height: 72px;
-	text-align: center;
+    .services-section {
+        display: flex;
+        flex-direction: column;
+        background-color: #080810;
+        width: 100%; /* Changed from 430px */
+        height: auto; /* Changed from 2078px */
+        padding: 80px 20px; /* Consistent padding */
+        box-sizing: border-box;
+    }
+
+    .services-head {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .services-head h1 {
+        font-family: 'Space Grotesk';
+        font-size: clamp(32px, 6vw, 42px); /* Responsive heading */
+        color: #fff;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .services-head p {
+        color: #94A3b8;
+        font: 16px Inter, sans-serif;
+        width: 100%; /* Changed from 380px */
+        max-width: 500px; /* Keeps line length readable on tablets */
+        height: auto; /* Let text grow */
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    .service-container {
+        display: flex;
+        flex-direction: column; /* Stack for mobile/tablet */
+        align-items: center;
+        width: 100%;
+        gap: 20px; /* Use gap instead of bottom margins for cleaner code */
+    }
+
+    .serviceCard {
+        display: flex;
+        flex-direction: column;
+        background-color: #0D0D1AB3;
+        padding: 30px;
+        margin-bottom: 20px;
+        width: 100%; /* Fluid */
+        max-width: 400px; /* Limits size so it doesn't look stretched on tablets */
+        height: auto; /* Remove fixed 200px height */
+        border: 1px solid rgba(0, 212, 255, .2);
+        border-radius: 12px;
+        box-sizing: border-box;
+    }
+
+    .service-icon {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .service-name h1 {
+        color: #FFFFFF;
+        font-family: "Space Grotesk";
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .service-info p {
+        font-family: inter, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        color: #94A3B8;
+    }
+
+    .cs-line {
+        width: 100%; /* Line fills the card width */
+        border: 1px solid rgba(0, 212, 255, .1);
+    }
+
+    .service-link p {
+        font-family: inter, sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        color: #00D4FF;
+        margin-top: 20px;
+    }
 }
 
-.service-container{
-	display: flex;
-	width: 100%;
-	justify-content: center;
-	
-}
-.serviceCard{
-	display: flex;
-	flex-direction: column;
-	background-color: #0D0D1AB3;
-	padding: 24px;
-	width: 300px;
-	height: 200px;
-	border: 1px solid rgba(0, 212, 255, .2);
-	border-radius: 12px;
-	margin: 0px 0px 24px;
-}
-.service-icon{
-	display: flex;
-	font-size: 28px;
-	width: 56px;
-	height: 56px;
-	margin: 0px 0px 2px;
-}
-.service-name h1{
-	color: #FFFFFF;
-	font-family: "Space Grotesk";
-	font-size: 20px;
-	margin: 0px 0px 8px;
-	width: ;
-}
-.service-info p{
-	font-family: inter,sans-serif;
-	font-size: 16px;
-	margin: 0px 0px 16px;
-	color: #94A3B8;
-}
-.service-link{
-	display: flex;
-	flex-direction: column;
-	margin: 4px 0px 0px;
-}
-.cs-line{
-	display: flex;
-	width: 278px;
-	border: 1px solid rgba(0, 212, 255, .2);
-}
-.service-link p{
-	font-family: inter,sans-serif;
-	font-size: 20px;
-	color: #00D4FF;
-	margin: 18px 0px 0px;
-}
-.service-link a{
-	text-decoration: none;
-	color: #00D4FF;
-}
+@media (max-width: 350px) {
+    .services-section {
+        display: flex;
+        flex-direction: column;
+        background-color: #080810;
+        width: 100%; /* Fix: Gone is 430px */
+        height: auto; /* Fix: Never hardcode height on sections */
+        padding: 60px 15px; /* Breathe */
+        box-sizing: border-box;
+    }
 
+    .services-head {
+        width: 100%;
+        margin-bottom: 40px;
+    }
 
+    .services-head h1 {
+        font-size: clamp(28px, 8vw, 36px); /* Fluid heading */
+        line-height: 1.2;
+    }
+
+    .services-head p {
+        width: 100%; /* Fix: 380px was wider than the screen! */
+        height: auto; /* Let text wrap */
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .service-container {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center;
+        width: 100%;
+    }
+
+    .serviceCard {
+        width: 100%; /* Take full available width */
+        max-width: 290px; /* But don't get too fat */
+        height: auto; /* Fix: 200px was too small for wrapping text */
+        padding: 20px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    .service-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .service-name h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .service-info p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .cs-line {
+        width: 100%; /* Match the card width */
+        border: 0.5px solid rgba(0, 212, 255, .2);
+    }
+
+    .service-link p {
+        font-size: 18px;
+        margin-top: 15px;
+    }
 }
