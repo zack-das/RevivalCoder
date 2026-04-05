@@ -1,57 +1,73 @@
 
 
 @media (max-width: 768px) {
+    .tools-container {
+        display: flex;
+        justify-content: center; /* Center the inner content */
+        background: #080810;
+        width: 100%; /* Changed from 430px */
+        height: auto; /* Let content grow naturally */
+        padding: 40px 0; /* Balanced padding */
+        box-sizing: border-box;
+    }
 
-.tools-container{
-	display: flex;
-	background: #080810;
-	width: 430px;
-	height: 422px;
-	padding: 64px 0px;
-}
-.toolset{
- display: flex;
- padding: 0px 16px;
- width: 380px;
- height: 292px;
- flex-direction: column;
- gap: 24px;
-}
-.toolssub{
-	font-family: 'Space Grotesk';
-	font-size: 24px;
-	margin:  0 0 8px;
-	color: #fff;
-}
-.toolset .techs{
-	color: #00D4FF;
-}
-.toolset p{
-	color: #94A3B8;
-	font: 16px 'inter', sans-serif;
-}
-.tools{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 0.75rem;
-	width: 380px;
-	height: 172px;
-}
-.tools .tool-name{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 95px;
-	height: 32px;
-	border: 1px solid #94A3B8;
-	border-radius: 20px;
-	box-shadow: 0 0 #0000, 0 0 #0000,  0 0 #0000, 0 0 #0000, 0 0 10px rgba(0,212,255,.2);
-}
-.tool-name p{
-	color: #00D4FF;
-	text-align: center;
-	font: 12px 'inter', sans-serif;
-	padding: 8px 16px;
-	text-shadow: 0 0 10px rgba(0, 212, 255, .2);
+    .toolset {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center text and tools for mobile */
+        padding: 0 20px;
+        width: 100%; /* Changed from 380px */
+        max-width: 500px; /* Optional: prevents it from getting too wide on tablets */
+        height: auto;
+        gap: 20px;
+        box-sizing: border-box;
+    }
+
+    .toolssub {
+        font-family: 'Space Grotesk';
+        font-size: clamp(20px, 5vw, 24px); /* Scales font based on screen size */
+        margin: 0 0 8px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .toolset p {
+        color: #94A3B8;
+        font: 16px 'inter', sans-serif;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .tools {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        width: 100%; /* Changed from 380px */
+        height: auto; /* Removed fixed height */
+    }
+
+    .tools .tool-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* auto width + padding is the 'gold standard' for pill buttons */
+        width: auto; 
+        min-width: 85px; 
+        height: 34px;
+        padding: 0 12px; 
+        border: 1px solid #94A3B8;
+        border-radius: 20px;
+        box-sizing: border-box;
+        box-shadow: 0 0 10px rgba(0, 212, 255, 0.1);
+    }
+
+    .tool-name p {
+        color: #00D4FF;
+        text-align: center;
+        font-size: 12px;
+        font-family: 'inter', sans-serif;
+        padding: 0;
+        margin: 0;
+    }
 }

@@ -62,6 +62,14 @@
         height: 200px;
         border: 1px solid rgb(0, 60, 83);
         border-radius: 5px;
+        position: relative;
+    }
+    .processNo{
+        font-size: 36px;
+        font-family: 'Space Grotesk';
+        position: absolute;
+        top: 20px;
+        right: 10px;
     }
     .processCard h3{
         color: #fff;

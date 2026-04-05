@@ -10,7 +10,7 @@
 @media (max-width: 768px) {
 	.home-section{
 	display: flex;
-	width: 430px;
+	width: 100vw;
 	height: 915px;
 	padding:  80px 0px 0px;
 	background-color: #080810;
@@ -171,3 +171,266 @@
 
 }
 
+@media (max-width: 400px) {
+	.home-section{
+	display: flex;
+	width: 100vw;
+	height: 915px;
+	padding:  80px 0px 0px;
+	background-color: #080810;
+
+}
+
+	.hero-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+
+}
+.hero-in{
+ /*background-color: blue;*/
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+ gap: 6px;
+ width: 200px;
+ padding: 6px;
+ border: 1px solid #25D1F5;
+ border-radius: 18px;
+
+}
+.upgrade {
+  font-family: 'Space Grotesk'; /* clean modern font */
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -1px;
+
+  background: linear-gradient(
+    90deg,
+    #22d3ee,   /* cyan */
+    #3b82f6,   /* blue */
+    #8b5cf6    /* purple */
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.hero-in p{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 14px;
+	color: #00D4FF;
+	padding: 2px 2px;
+}
+.glowdot{
+	display: flex;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #25D1F5;
+	box-shadow:
+		0 0 4px #25D1F5,
+		0 0 8px #25D1F5,
+		0 0 14px rgba(37, 209, 245, 0.6),
+		0 0 20px rgba(37, 209, 245, 0.3);
+}
+
+.hero-headline{
+	display: flex;
+	flex-direction: row;
+	width: 358px;
+	height: 120px;
+
+}
+.hero-headline .headin{
+	font-family: 'Space Grotesk';
+	margin: 60px 0;
+	font-size: 48px;
+	text-align: center;
+	color: #fff;
+}
+.hero-headline span{
+	color: #25D1F5;
+}
+.hero-info{
+	display: flex;
+	flex-direction: column;
+	margin: 120px 0 0 0;
+	width: 340px;
+	height: 117px;
+
+
+}
+.hero-info p{
+	font: 18px inter,sans-serif;
+	text-align: center;
+	color: #94A3B8;
+	margin: 32px 0px 0px;
+}
+.hero-cta{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	height: 128px;
+	margin: 32px 0px 0px;
+}
+.start{
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	border-radius: 12px;
+	width: 190px;
+	height: 58px;
+	padding: 0px 26px;
+	background-color: #00D4FF;
+}
+.start p{
+	text-align: center;
+	font: 22px inter,sans-serif;
+
+}
+.start .arrow{
+	display: flex;
+	width: 40px;
+	height: 40px;
+}
+.start .arrow p{
+	font-size: 30px;
+	text-align: center;
+}
+
+
+.hero-cta .start .arrow {
+	text-align: center;
+	font-size: 30px;
+	transition: transform 0.3s ease;
+}
+
+.start:hover .arrow {
+	transform: translateX(4px);
+}
+
+.hero-cta .view-services{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	width: 160px;
+	height: 56px;
+	border: 1px solid #00D4FF;
+	color: #00D4FF;
+	padding: 0px 32px;
+
+}
+.hero-cta .view-services p{
+		font: 22px inter,sans-serif;
+		text-align: center;
+}
+}
+
+
+@media (max-width: 350px) {
+    .home-section {
+        display: flex;
+        width: 100%; /* Never use 100vw for containers, it causes horizontal scroll */
+        height: auto; /* Changed from 915px to allow content to flow */
+        padding: 100px 10px 60px; /* More top padding for the fixed nav */
+        background-color: #080810;
+        box-sizing: border-box;
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero-in {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        width: auto; /* Let it hug the text */
+        min-width: 160px;
+        padding: 6px 12px;
+        border: 1px solid #25D1F5;
+        border-radius: 18px;
+    }
+
+    .hero-headline {
+        display: flex;
+        flex-direction: column;
+        width: 100%; /* Crucial: 358px was breaking your layout */
+        height: auto; /* Remove fixed height */
+        margin-top: 20px;
+    }
+
+    .hero-headline .headin {
+        font-family: 'Space Grotesk';
+        margin: 20px 0;
+        font-size: 32px; /* 48px is too big for 320px screens */
+        line-height: 1.2;
+        text-align: center;
+        color: #fff;
+    }
+
+    .hero-info {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0 0 0;
+        width: 100%; /* Fill the container */
+        height: auto;
+    }
+
+    .hero-info p {
+        font: 16px/1.5 inter, sans-serif; /* Slightly smaller font */
+        text-align: center;
+        color: #94A3B8;
+        margin: 15px 0;
+    }
+
+    .hero-cta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        height: auto;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .start {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 12px;
+        width: 80%; /* Relative width is safer */
+        height: 54px;
+        padding: 0 15px;
+        background-color: #00D4FF;
+    }
+
+    .start p {
+        font-size: 18px; /* 22px was a bit chunky */
+        font-weight: 600;
+    }
+
+    .hero-cta .view-services {
+        width: 80%;
+        height: 54px;
+        padding: 0;
+        font-size: 18px;
+    }
+    
+    .hero-cta .view-services p {
+        font-size: 18px;
+    }
+}

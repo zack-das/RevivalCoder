@@ -13,9 +13,9 @@ function App() {
     <Navbar/>
     <Home/>
     <div className="scroll-indicator">⌄</div>
-    <Tools/>
-    <Services/>
-    <Process/>
+     <Tools/>
+    {/*<Services/>
+    <Process/>*/}
    </>
   )
 }
