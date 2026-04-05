@@ -5,13 +5,7 @@
 html {
   scroll-behavior: smooth;
 }
-body{
-  margin: 0;
-  box-sizing: border-box;
-  padding: 0;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-}
+
 .scroll-indicator {
   position: absolute;
   bottom: 20px;
