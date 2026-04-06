@@ -114,7 +114,7 @@ function Process() {
                 <h1>Why Work With Me</h1>
                 {strengths.map((strength) => (
                     <div className="whyCard" key={strength.id}>
-                        
+                        <h1>{strength.titl}
                     </div>
                     ))}
 
