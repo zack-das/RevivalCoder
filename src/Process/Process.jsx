@@ -81,6 +81,28 @@ function Process() {
         }
 
     ]
+    const clients = [
+        {
+            name: "Sarah.K",
+            review: '"The website redesign completely transformed our business. The attention to detail and modern aesthetic is exactly what we needed."',
+            image: "UserImage"
+        },
+         {
+            name: "Sarah.K",
+            review: '"The website redesign completely transformed our business. The attention to detail and modern aesthetic is exactly what we needed."',
+            image: "UserImage"
+        },
+         {
+            name: "Sarah.K",
+            review: '"The website redesign completely transformed our business. The attention to detail and modern aesthetic is exactly what we needed."',
+            image: "UserImage"
+        },
+         {
+            name: "Sarah.K",
+            review: '"The website redesign completely transformed our business. The attention to detail and modern aesthetic is exactly what we needed."',
+            image: "UserImage"
+        }
+    ]
   return (
     <section className='Process'>
        <div className='processHead'>
@@ -119,6 +141,12 @@ function Process() {
                     ))}
 
             </div>
+
+            <div className="clientReviews">
+                <h1>What Clients Say</h1>
+
+            </div>
+            
     </section>
   )
 }
