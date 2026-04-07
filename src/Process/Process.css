@@ -111,6 +111,49 @@
          font-family: 'inter',sans-serif;
           color: #00D4FF;
     }
+    /*Project cards*/
+    .projectCard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        padding: 24px;
+        max-height: 500px;
+    }
+    .projectCard.cardImage{
+        display: flex;
+        width: 100%;
+        height: auto;
+        min-height: 192px;
+        border-radius: 10px;
+
+    }
+    .projectCard p{
+        font-size: 14px;
+    font-family: 'inter', sans-serif;
+    color: #00D4FF;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;           /* This forces exactly 2 lines */
+    -webkit-box-orient: vertical;    /* Necessary for the clamp to work */
+    overflow: hidden;                /* Hides the overflow */
+    text-overflow: ellipsis;         /* Adds the '...' */
+    
+    /* Optional: add a line-height to ensure the spacing looks clean */
+    line-height: 1.5; 
+    max-height: 3em;
+    }
+    img{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10px;
+
+    }
+
 
 }
 

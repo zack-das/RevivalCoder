@@ -12,6 +12,8 @@ import {
   MdAttachMoney
 } from "react-icons/md";
 
+import comp from '../assets/images/comp.jpg';
+
 
 function Process() {
     const processes=[
@@ -38,19 +40,19 @@ function Process() {
     const projects = [
         {
             id:1,
-            image: "UserImage",
+            image: comp,
             name: "E-Commerce Platform",
             description: "A full-featured online store with Stripe payments, admin dashboard, and inventory management."
         },
         {
             id:2,
-            image: "UserImage",
+            image: comp,
             name: "Brand Identity System",
             description: "Complete visual identity for a fintech startup including logo, guidelines, and social assets."
         },
         {
             id:2,
-            image: "UserImage",
+            image: comp,
             name: "Linux Dev Environment",
             description: "Automated setup script for a perfect web development environment on Ubuntu."
         },
@@ -144,7 +146,7 @@ function Process() {
                         <div className="cardImage">
                             <img src={project.image}/>
                         </div>
-                        <h1>{project.name}</h1>
+                        <h3>{project.name}</h3>
                         <p>{project.description}</p>
                         {/*<div className="myStack">{project.}*/}
                     </div>
