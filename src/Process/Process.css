@@ -73,6 +73,7 @@
         flex-direction: column;
         width: 100%;
         height: auto;
+        gap: 20px;
         background: #080810;
     }
     .recentWorkSection h1{
@@ -120,6 +121,8 @@
         height: auto;
         padding: 24px;
         max-height: 500px;
+        border: 2px solid #0B0B17;
+        background: #080810;
     }
     .projectCard.cardImage{
         display: flex;
@@ -127,12 +130,19 @@
         height: auto;
         min-height: 192px;
         border-radius: 10px;
+        box-sizing: border-box;
 
     }
+    .projectCard h3{
+        white-space: normal;
+        color: white;
+        font-size: 20px;
+        font-family: 'Space Grotesk';
+    }
     .projectCard p{
-        font-size: 14px;
+    font-size: 14px;
     font-family: 'inter', sans-serif;
-    color: #00D4FF;
+    color: white;
 
     display: -webkit-box;
     -webkit-line-clamp: 2;           /* This forces exactly 2 lines */
