@@ -146,6 +146,7 @@ function Process() {
                         <div className="cardImage">
                             <img src={project.image}/>
                         </div>
+                        
                         <h3>{project.name}</h3>
                         <p>{project.description}</p>
                         {/*<div className="myStack">{project.}*/}
