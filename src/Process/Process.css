@@ -68,6 +68,50 @@
         position: relative;
         z-index: 1;
     }
+    .recentWorkSection{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background: #080810;
+    }
+    .recentWorkSection h1{
+        color: #fff;
+        font-size: clamp(2.2rem, 2.5vw, 3.8rem);
+        font-family: 'Space Grotesk';
+    }
+    .recentWorkSection h1 span{
+        color: #25D1F5;
+    }
+    .recentWorkSection p{
+        font-size: clamp(1rem, 0, 1.2rem);
+        font-family: inter,sans-serif;
+        color: #94A3B8;
+    }
+    .viewBtn{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        border: 1px solid #00D4FF;
+        border-radius: 10px;
+         padding: 12px 24px;
+          min-height: 30px; 
+    }
+    .recentWorkSection .viewAll{
+        display: flex;
+        justify-content: center;
+         width: 100%;
+         max-width: 300px;
+         background: #080810;
+         border-radius: 12px;
+         border: none;
+    }
+    .recentWorkSection .viewAll p{
+         font-size: 18px;
+         font-family: 'inter',sans-serif;
+          color: #00D4FF;
+    }
+
 }
 
 
