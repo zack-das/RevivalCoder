@@ -1,9 +1,15 @@
 import React from 'react'
 import "./Process.css"
 import { 
-  MdOutlineMessage,      
+  MdOutlineMessage, 
+  MdFlashOn,     
   MdOutlineBuild,        
-  MdOutlineRocketLaunch  
+  MdOutlineRocketLaunch,
+  MdCleaningServices,
+  MdStar,
+  MdOutlinePalette,
+  MdPerson,
+  MdAttachMoney
 } from "react-icons/md";
 
 
@@ -32,16 +38,19 @@ function Process() {
     const projects = [
         {
             id:1,
+            image: "UserImage",
             name: "E-Commerce Platform",
             description: "A full-featured online store with Stripe payments, admin dashboard, and inventory management."
         },
         {
             id:2,
+            image: "UserImage",
             name: "Brand Identity System",
             description: "Complete visual identity for a fintech startup including logo, guidelines, and social assets."
         },
         {
             id:2,
+            image: "UserImage",
             name: "Linux Dev Environment",
             description: "Automated setup script for a perfect web development environment on Ubuntu."
         },
@@ -51,31 +60,32 @@ function Process() {
     const strengths = [
         {
             id:1,
-            icon:,
+            icon:MdFlashOn,
             title:"Fast Delivery",
             how: "Most projects completed in 3–7 days without compromising quality."
         },
          {
             id:2,
-            icon:,
+            icon:MdCleaningServices,
             title:"Clean Code",
             how: "Readable, maintainable, and well-documented code that scales."
         },
          {
             id:3,
-            icon:,
+            icon:MdOutlinePalette,
             title:"Modern Design",
             how: "Pixel-perfect implementations following the latest design trends."
         },
         {
             id:4,
-            icon:,
+            icon:MdPerson,
             title:"Personalized",
             how: "Direct communication with me. No middlemen or agency bloat."
         },
+
         {
             id:5,
-            icon:,
+            icon:MdAttachMoney,
             title:"Affordable",
             how: "Competitive rates and transparent pricing. No hidden fees."
         }
@@ -126,9 +136,19 @@ function Process() {
             </div>
 
             <div className="recentWorkSection">
-                <h1>Recent Work</h1>
+                <h1>Recent <span>Work</span></h1>
                 <p>A selection of projects that showcase my skills in development,design, and systems engineering.</p>
-                <button className="viewAll">View All projects</button>
+                <div className="viewBtn"><button className="viewAll"><p>View All projects</p></button></div>
+                {projects.map((project) => (
+                    <div className="projectCard" key={project.id}>
+                        <div className="cardImage">
+                            <img src={project.image}/>
+                        </div>
+                        <h1>{project.name}</h1>
+                        <p>{project.description}</p>
+                        {/*<div className="myStack">{project.}*/}
+                    </div>
+                    ))}
 
             </div>
 
@@ -136,7 +156,9 @@ function Process() {
                 <h1>Why Work With Me</h1>
                 {strengths.map((strength) => (
                     <div className="whyCard" key={strength.id}>
-                        <h1>{strength.titl}
+                        <div className="strengthIcon"><strength.icon/></div>
+                        <h1>{strength.title}</h1>
+                        <p className="strengthInfo">{strength.how}</p>
                     </div>
                     ))}
 
