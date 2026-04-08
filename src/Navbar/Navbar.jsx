@@ -1,40 +1,56 @@
-import { useState } from 'react'
-import { HiMenu, HiX } from 'react-icons/hi' // Import HiX
-import './Navbar.css'
+import { useState } from "react";
+import { HiMenu, HiX } from "react-icons/hi";
+import "./Navbar.css";
 
 function Navbar() {
-  const [open, setOpen] = useState(false)
-
-  // Function to close menu
+  const [open, setOpen] = useState(false);
   const closeMenu = () => setOpen(false);
 
   return (
-    <div className="navContainer">
-      {/* 1. The Overlay: Only visible when menu is open */}
+    <header className="navContainer">
+      {/* Overlay for mobile menu */}
       {open && <div className="menu-overlay" onClick={closeMenu}></div>}
 
-      <nav>
-        <div className="logoContainer"><h1 className="logo">RevivalCode</h1></div>
+      <nav className="navbar">
+        <div className="logoContainer">
+          <h1 className="logo">RevivalCode</h1>
+        </div>
 
-        <ul className={`navList ${open ? 'open' : ''}`}>
-          <li className="listItem" onClick={closeMenu}>Services</li>
-          <li className="listItem" onClick={closeMenu}>Process</li>
-          <li className="listItem" onClick={closeMenu}>Projects</li> 
-          <li className="listItem" onClick={closeMenu}>Contact</li>
-          <li className="HireBtn" onClick={closeMenu}>Hire Me</li>
+        {/* Desktop Navigation - Hidden on mobile */}
+        <ul className="navItems">
+          <li className="listItem">Services</li>
+          <li className="listItem">Process</li>
+          <li className="listItem">Projects</li>
+          <li className="listItem">Contact</li>
+          <li className="HireB">Hire Me</li>
         </ul>
 
-        <div className="harmMenu">
-          {/* 2. Switch Icon based on state */}
-          {open ? (
-            <HiX className="menuIcon" size={30} onClick={() => setOpen(false)} />
-          ) : (
-            <HiMenu className="menuIcon" size={30} onClick={() => setOpen(true)} />
-          )}
+        {/* Mobile Navigation - Hidden on desktop */}
+        <ul className={`navList ${open ? "open" : ""}`}>
+          <li className="listItem" onClick={closeMenu}>
+            Services
+          </li>
+          <li className="listItem" onClick={closeMenu}>
+            Process
+          </li>
+          <li className="listItem" onClick={closeMenu}>
+            Projects
+          </li>
+          <li className="listItem" onClick={closeMenu}>
+            Contact
+          </li>
+          <li className="HireBtn" onClick={closeMenu}>
+            Hire Me
+          </li>
+        </ul>
+
+        {/* Hamburger Icon */}
+        <div className="harmMenu" onClick={() => setOpen(!open)}>
+          {open ? <HiX size={30} /> : <HiMenu size={30} />}
         </div>
       </nav>
-    </div>
-  )
+    </header>
+  );
 }
 
-export default Navbar
+export default Navbar;
