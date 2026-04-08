@@ -43,6 +43,19 @@ nav {
     transition: right 0.4s ease;
     z-index: 999;
 }
+.navItems a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Fixes the 'Fixed Header' overlap issue and adds smooth glide */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px; /* Adjust this to match your navbar height */
+}
 .navList.open {
     right: 0;
 }
